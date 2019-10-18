@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Questao 4</title>
+    </head>
+    <body>
+        <script src="Quest4.js"></script>
+        <h1>Cadastro</h1>
+        <form>
+            <label for="inputNome">Nome:</label>
+            <input type="text" id="name" name="Nome" onblur="CondicaoNome();">
+            <p id="errNome"></p>
+
+            <label for="inputLatitude">Latitude:</label>
+            <input type="text" id="lati" name="Latitude" onblur="CondicaoLati();">
+            <p id="errLati"></p>
+
+            <label for="inputLongitude">Longitude:</label>
+            <input type="text" id="longi" name="Longitude" onblur="CondicaoLongi();">
+            <p id="errLongi"></p>
+
+            <label for="inputDescricao">Descrição:</label>
+            <input type="text" id="descri" name="Descricao" onblur="CondicaoDescri();">
+            <p id="errDescri"></p>
+
+            <button onclick="ReceberInf();">Submit</button>
+            <p id="errMenssage"></p>
+        </form>
+    </body>
+</html>
